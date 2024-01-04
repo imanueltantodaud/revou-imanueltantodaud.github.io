@@ -48,3 +48,7 @@ body {
 .bg-orange {
 	background-color: orange;
 }
+
+.readonly {
+	background-color: lightgrey;
+}
