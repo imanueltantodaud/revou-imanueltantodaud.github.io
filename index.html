@@ -4,28 +4,52 @@
   	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-	<!-- Defines a header of the current section. -->
-	<!-- This header (usually treated as a banner, but) will not be treated as a banner, -->
-	<!-- if there's <main> or <section> as the ancestor element tag. -->
-	<header>
-	  	<h1 class="center">Kalkulator</h1>
-	</header>
+		<!-- Defines a header of the current section. -->
+		<!-- This header (usually treated as a banner, but) will not be treated as a banner, -->
+		<!-- if there's <main> or <section> as the ancestor element tag. -->
+		<header>
+		  	<h1 class="center">Kalkulator Segitiga</h1>
+		</header>
 
   	<!-- Defines the main feature of the web page. -->
   	<!-- This tag must be used only once per page (except, other <main> tag must be hidden). -->
-  	<main>
-		<table border="0" width="50%" align="center">
-		  	<tr>
-		  		<td class="center bg-orange border-solid" colspan="3">
-		  			<input name="query" id="query" class="width-100" type="number" step="1">
-		  		</td>
-		  	</tr>
-		  	<tr>
-		  		<td class="center bg-orange border-solid">halo</td>
-		  		<td class="center bg-orange border-solid">halo</td>
-		  		<td class="center bg-orange border-solid">halo</td>
-		  	</tr>
-		</table>
+  	<main class="center">
+  		<img src="https://cdn.pixabay.com/photo/2013/07/13/13/36/triangle-161210_1280.png" class="width-25 flip-vertical set-margin-top-1 set-margin-bottom-1">
+  		<div class="set-margin-top-1 set-margin-bottom-1">
+	  		<br>
+	  		<label for="luas-alas">Masukkan nilai alas segitiga</label>
+	  		<br>
+	  		<input id="luas-alas" type="number" step="1" placeholder="Masukkan nilai alas segitiga" class="input-text">
+  		</div>
+  		<div class="set-margin-top-1 set-margin-bottom-1">
+	  		<br>
+	  		<label for="luas-tinggi">Masukkan nilai tinggi segitiga</label>
+	  		<br>
+	  		<input id="luas-tinggi" type="number" step="1" placeholder="Masukkan nilai tinggi segitiga" class="input-text">
+  		</div>
+  		<div class="set-margin-top-1 set-margin-bottom-1">
+	  		<button id="calculate-luas" type="button">Hitung Luas Segitiga</button>
+  		</div>
+  		<div class="set-margin-top-1 set-margin-bottom-1">
+	  		<br>
+	  		<label for="luas-hasil">HASIL LUAS SEGITIGA</label>
+	  		<br>
+	  		<input readonly id="luas-hasil" type="text" placeholder="Hasil luas segitiga ditampilkan di sini" class="input-text">
+  		</div>
+
+
+			<table hidden border="0" width="50%" align="center">
+			  	<tr>
+			  		<td class="center bg-orange border-solid" colspan="3">
+			  			<input name="query" id="query" class="width-100" type="number" step="1">
+			  		</td>
+			  	</tr>
+			  	<tr>
+			  		<td class="center bg-orange border-solid">halo</td>
+			  		<td class="center bg-orange border-solid">halo</td>
+			  		<td class="center bg-orange border-solid">halo</td>
+			  	</tr>
+			</table>
   	</main>
 
   	<script src="js/script.js" type="text/javascript"></script>

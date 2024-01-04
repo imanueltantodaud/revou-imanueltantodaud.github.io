@@ -1,9 +1,40 @@
 body {
-	background-color: lightblue;
+	/*background-color: lightblue;*/
+	background-image: url('https://cdn.pixabay.com/photo/2017/03/12/02/20/triangle-2136288_1280.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.set-margin-top-1 {
+	margin-top: 10px;
+}
+
+.set-margin-bottom-1 {
+	margin-bottom: 10px;
 }
 
 .center {
 	text-align: center;
+}
+
+.flip-vertical {
+	transform: rotate(180deg);
+}
+
+.input-text {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	width: 25%;
+	height: 25px;
+	border-radius: 16px;
+}
+
+.width-25 {
+	width: 25%;
+}
+
+.width-50 {
+	width: 50%;
 }
 
 .width-100 {
